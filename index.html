@@ -1,174 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Khaja Mohinuddin</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="header-row"> 
-        <div class="box"><h1>Khaja Mohinuddin</h1></div>
-        <div class="box">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+{
+    font-family:  Arial, Helvetica, sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+    color: white;
 
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+}
+/* HEADER PART OF PRPJECT */
+header
+{
+    position:sticky;
+    background-color:#152e47;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    display: flex;
+    justify-content :space-around;
+    align-items: center;
+}
+header div  h1
+{
+    margin-left: -190px;
+}
+header ul
+{
+    display: flex;
+    list-style: none;
+    margin-right: -50px;
+}
+header ul li 
+{
+    margin-right: 30px;
+}
+header ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+header ul li :hover
+{
+    color: #2989ff;
+}
+
+/* HOME */
+#home
+{
+    background-color: #1a2928;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+#home div img
+{
+    height: 400px;
+    margin: 30px;
+    margin-right: 400px;
+}
+#home div h2
+{
+    font-size:60px;
+    margin-top: 120px;
+    margin-left: 200px;
+}
+#home div h2 span
+{
+    color: #1a2928;
+}
+#home div p
+{
+    font-size:20px;
+    margin-left: 200px;
+    padding-right: 250px;
+}
+
+/* PROJECTS */
+#projects
+{
+    background-color: #1a2928;
+    padding: 50px;
+    padding-top: 100px;
+    
+    
+}
+#projects h1
+{
+    font-size: 40px;
+    text-align: center;
+}
+#cards_container
+{
+    display: flex;
+    justify-content: center;
+}
+.cards
+{
+    background-color: #0c1827;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-left:20px ;
+    width: 30%;
+    padding: 30px
+}
+.cards div button a
+{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+.cards div button
+{
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    background-color:#2989ff ;
+}
+#projects h1 span
+{
+    color: #2989ff;
+}
+/* SERVICES */
+#services
+{
+    background-color: #1a2928;
+    padding: 60px;
+}
+/* ABOUT */
+#about
+{
+    background-color: #1a2928;
+    display: flex;
+    justify-content: space-around;
+}
+#about div img
+{
+    height: 400px;
+    margin: 30px;
+    margin-left: 200px;
+}
+#about div h2
+{
+    font-size:40px;
+    margin-top: 160px;
+}
+#about div p
+{
+    font-size:20px;
+    padding-right: 250px;
+    
+}
+#about div h2 span
+{
+    color: #2989ff;
+}
+/* CONTACT */
+#contact
+{
+    background-color: #1a2928;
+    padding: 60px;
+    
+}
+#contact ul
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#contact div
+{
+    font-size: 30px;
+    text-align: center;
+    color: wheat; 
+}
+#contact ul li a img
+{
+    border-radius: 100px;
+    width: 70px;
+}
+#facebook:hover
+{
+    background: #3B5998;
+    box-shadow: 0 0 20px 5px rgba(10, 102, 194, 0.8);
+}
+
+#insta:hover
+{
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4, #405DE6);
+    box-shadow: 
+        0 0 10px rgba(255, 105, 180, 0.6), /* Light pink glow */
+        0 0 20px rgba(255, 20, 147, 0.5), /* Deep pink glow */
+        0 0 30px rgba(255, 165, 0, 0.4);
+}
+#linkdin:hover
+{
+    background: #0A66C2;
+    box-shadow: 0 0 20px 5px rgba(10, 102, 194, 0.8);
+}
+#git:hover
+{
+    background: white;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Khaja Mohinuddin</h1>
         </div>
-      </div>
-
-      <div class="row" id="home">
-        <div style="display: flex;padding-top: 50px;">
-          <div class="box">
-            <h1>Full Stack Developer</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              neque est nihil ipsum error. Deserunt voluptas explicabo ea eum
-              quasi. Rem nisi molestias quia nesciunt incidunt numquam fugiat
-              perferendis assumenda?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              neque est nihil ipsum error. Deserunt voluptas explicabo ea eum
-              quasi. Rem nisi molestias quia nesciunt incidunt numquam fugiat
-              perferendis assumenda?
-            </p>
-            <button>Button 1</button>
-            <button>Button 1</button>
-          </div>
-          <div class="box">
-            <img src="https://picsum.photos/id/2/400/400" />
-          </div>
+        <div>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
         </div>
-      </div>
+    </header>
 
-      <div id="projects" class="row" style="background-color: lightcoral">
-        <h1>Projects</h1>
-        <div style="display: flex">
-          <div class="box">
-            <h3>Project 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
 
-          <div class="box">
-            <h3>Project 2</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
+    <main>
+        <section id="home">
+            <div>
+                <h2>I'm Mohinuddin</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint voluptas sunt commodi repudiandae placeat labore vitae obcaecati, eius rem quaerat excepturi exercitationem corrupti porro suscipit ipsa quam dolorem consequuntur!</p>
+            </div>
+            <!-- <div>
+                <img src="assets/images/solo.jpg" alt="profile image">
+            </div> -->
+        </section>
+        <section id="projects">
+            <h1>My <span>Projects</span></h1>
+            <div id="cards_container">
+                <div class="cards">
+                    <div>
+                        <h2>Online Store</h2>
+                    </div>
+                    <div>
+                        <p>This is an online store where you can browse and purchase food items, add them to your cart, and have them delivered straight to your doorstep.</p>
+                    </div>
+                    <div>
 
-          <div class="box">
-            <h3>Project 3</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="services" class="row" style="background-color: lightblue">
-        <h1>Services</h1>
-        <div style="display: flex">
-          <div class="box">
-            <h3>Web App Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
+                        <button type="button"> <a href="https://khaja1818.github.io/online-store/">View</a></button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div>
+                        <h2>Project2</h2>
+                    </div>
+                    <div>
+                        <p>This is an online store where you can browse and purchase food items, add them to your cart, and have them delivered straight to your doorstep.</p>
+                    </div>
+                    <div>
 
-          <div class="box">
-            <h3>Mobile App Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
+                        <button type="button"> <a href="#online-store">View</a></button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div>
+                        <h2>Project3</h2>
+                    </div>
+                    <div>
+                        <p>This is an online store where you can browse and purchase food items, add them to your cart, and have them delivered straight to your doorstep.</p>
+                    </div>
+                    <div>
 
-          <div class="box">
-            <h3>Backend Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="about" class="row">
-        <h1>About</h1>
-        <h3>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint
-          optio labore a obcaecati. Ullam distinctio corrupti autem. Veritatis
-          ipsa veniam deserunt asperiores nesciunt at provident itaque
-          cupiditate vel dolor.
-        </h3>
-        <h2>Skills</h2>
-        <h3>Java, Python, Reactjs</h3>
-        <p>Display the logo of all the technologies you know.</p>
-      </div>
-      <div
-        id="contact"
-        class="row"
-        style="background-color: lightgoldenrodyellow"
-      >
-        <h1>Contact</h1>
-        <div style="display: flex">
-         
+                        <button type="button"> <a href="#online-store">View</a></button>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section id="services">
+            <div>
+                <h2>Mohinuddin</h2>
+                <p>this is my website this is my website this is my website this is my website this is my website this is my website this is my website this is my website this is my website this is my website this is my website this is my website this is my website this is my website this is my website this is my website this is my website this is my website this is my website</p>
+            </div>
+            
+        </section>
+        <section id="about">
+            <!-- <div>
+                <img src="assets/images/peakpx.jpg" alt="about">
+            </div> -->
 
-          <div class="box">
-            <h3>Contact Form</h3>
-            <p>
-             <input type="text" placeholder="Enter Name">
-            </p>
-            <p>
-              <input type="email" placeholder="Enter Email">
-             </p>
-             <p>
-              <textarea rows="10" cols="60" placeholder="Enter message"></textarea>
-             </p>
-             <button>Send</button>
-          </div>
+            <!-- <div>
+                <h2>I am <span>Web Developer</span></h2>
+                <p>Hi! I'm khaja. I have been developing websites since my second year of B.Tech. I am currently pursuing  B.Tech in Computer Science and Engineering at Gokaraju Rangaraju Institute of Engineering and Technology. Previously, I completed  Diploma in Computer Engineering from Government Polytechnic, Gadwal</p>
+            </div> -->
+        </section>
+        <section id="contact">
+            <div>
 
-          <div class="box">
-            <h3>Your/Company Name</h3>
-            <p>
-              <b>Address: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-            <p>
-              <b>Email Address: </b>sample@email.com
-            </p>
-            <p>
-              <b>Phone Number: </b>+91 343 445 6789
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="footer">@copyright 2024. All rights reserved.</div>
-    </div>
-  </body>
+                <h1>Contact</h1>
+            </div>
+            <ul>
+                <li>
+                    <a href=""><img id="facebook" src="assets/images/facebook.png" alt="facebook"></a>
+                </li>
+                <li>
+                    <a  href="#"><img id="insta" src="assets/images/instagram.png" alt="instagram"></a>
+                </li>
+                <li>
+                    <a  href="#"><img id="linkdin" src="assets/images/linkedin.png" alt="linkedin"></a>
+                </li>
+                <li>
+                    <a  href="#"><img id="git" src="assets/images/github.png" alt="github"></a>
+                </li>
+                
+            </ul>
+        </section>
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+</body>
 </html>
